@@ -1,0 +1,224 @@
+body {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+	background-color: #AFAAE0;
+}
+
+.container {
+	margin: auto;
+	width: 60%;
+}
+
+img {
+	display: inline-block;
+}
+
+.caption {
+	/* background-color: #5a4e7c;
+	margin-top: 20px;
+	margin-bottom: 5px; */
+	display: block;
+	text-align: center;
+}
+
+.garments {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.garment {
+	width: 220px;
+	background-color: #ffb5bf;
+	padding: 1em;
+	margin: 2em;
+	border-radius: 0.5em;
+	margin-top: 20px;
+}
+
+.field {
+	padding: 20px;
+}
+
+.field label {
+	font-weight: bolder;
+	margin-top: 15px;
+	text-align: justify;
+	color: whitesmoke;
+
+}
+
+.field input {
+	border-radius: 5px;
+	background-color: snow;
+	padding: 10px;
+	border: 0;
+	color: palevioletred;
+	margin-top: 10px;
+}
+
+/* SNACK BAR */
+#snackbar {
+	visibility: hidden;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 0px;
+	padding: 40px;
+	font-size: 17px;
+}
+
+.hidden {
+	display: none;
+}
+
+.mt1 {
+	margin-top: 1em;
+}
+
+
+.message {
+
+	margin-top: 1em;
+	padding: 1em;
+	color: darkred;
+	font-family: monospace;
+	text-align: center;
+}
+
+.garment img {
+	max-width: 128px;
+}
+
+.styleInput {
+	background-color: white;
+	border: 10px solid white;
+	color: palevioletred;
+	font-weight: bolder;
+	text-align: center;
+	border-radius: 7px;
+	padding: 12px;
+	width: 200px;
+	margin: 20px;
+}
+
+.styleButton {
+	background-color: palevioletred;
+	color: white;
+	font-size: medium;
+	text-transform: uppercase;
+	font-weight: bolder;
+	padding: 25px;
+	border-radius: 50px;
+	border: 0px;
+	width: 180px;
+	margin-bottom: 100px;
+}
+
+.cint {
+	font-size: smaller;
+	text-align: center;
+}
+
+.flex {
+	margin-top: -30px;
+	margin-bottom: 20px;
+
+}
+
+.flex p {
+	margin-right: 20px;
+	margin-top: -20px;
+	color: #fddcd5;
+	font-size: 35px;
+	text-align: center;
+}
+
+h1 {
+	font-family: cursive;
+
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-family: monospace;
+	margin-top: 50px;
+	text-decoration: overline;
+}
+
+.button a {
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px;
+	border-radius: 50px;
+	width: 200px;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	color: white;
+	background-color: palevioletred;
+}
+
+.genders {
+	margin-bottom: 10px;
+}
+
+.genders label {
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: medium;
+}
+
+.seasons {
+	margin-bottom: 10px;
+}
+
+.seasons label {
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: medium;
+}
+
+.price {
+	margin-bottom: 10px;
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.price label {
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: medium;
+
+}
+
+.pink {
+	color: palevioletred;
+	font-weight: bolder;
+}
+
+.btn {
+	background-color: palevioletred;
+	color: whitesmoke;
+	font-size: medium;
+	padding: 20px;
+	width: 200px;
+	border: 0;
+	font-weight: bold;
+	border-radius: 40px;
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+.white {
+	background-color: white;
+	color: palevioletred;
+	font-weight: bolder;
+	font-size: medium;
+	padding: 30px;
+	margin-top: 30px;
+	margin-bottom: -50px;
+	border-radius: 10px;
+}

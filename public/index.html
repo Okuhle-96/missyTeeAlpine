@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <title>Document</title>
+    <script class="garmentListTemplate" type="type/script-x">
+		<div class="center pink">
+			{{garments.length}} <strong class="pink">garments found</strong>
+		</div>
+		<div class="garments center">
+			{{#each garments}}
+
+		<div class="garment">
+		<img src="/images/{{img}}" alt="">
+
+		<form action="/garment/" method="post">
+			<input type="hidden" name="img" value="{{img}}" >
+			<div class="white">
+				<div class="field" >
+					{{description}}
+				</div>
+				<div class="field">
+					<strong>{{price}}</strong>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+	{{/each}}
+		</div>
+	</script>
+</head>
+<body>
+    <!-- <h2>Call API on click</h2>
+	<div class="center" x-data="{ users : [] }" x-init=""  >
+
+		<button class="btn" @click="fetch('https://jsonplaceholder.typicode.com/users')
+			.then(r => r.json())
+			.then(data => users = data )"   >Load users</button>
+		<ul>
+			<template x-for="user in users" >
+				<li x-text="user.name" ></li>
+			</template>
+		</ul>
+	</div> -->
+    <div class="container ">
+		<div class="center">
+			<h1>Missy Tee</h1><br>
+			<div class="flex center">
+				<p>C L O T H I N G _ S T O R E</p>
+			</div>
+		</div>
+
+		<!-- <div class="loginSection center">
+			<p class="cint col-5-sm center">Please enter your GitHub Username here in order to login to Missy Tee
+				Clothing Store.</p><br>
+			<input type="text" class="textInput styleInput" placeholder="GitHub Username"><br>
+			<input type="button" value="login" class="userLogin styleButton">
+		</div> -->
+
+		<div class="topSection hidden">
+
+			<h2>Filter</h2>
+			<div class="genders center">
+				<label>
+					<input type="radio" name="gender" value="All"> All
+				</label>
+
+				<label>
+					<input type="radio" name="gender" value="Male"> Male
+				</label>
+
+				<label>
+					<input type="radio" name="gender" value="Female"> Female
+				</label>
+				<label>
+					<input type="radio" name="gender" value="Unisex"> Unisex
+				</label>
+			</div>
+			<div class="seasons center">
+
+				<label>
+					<input type="radio" name="season" value="All"> All
+				</label>
+				<label>
+					<input type="radio" name="season" value="Summer"> Summer
+				</label>
+				<label>
+					<input type="radio" name="season" value="Winter"> Winter
+				</label>
+				<label>
+					<input type="radio" name="season" value="All Seasons"> All seasons
+				</label>
+			</div>
+			<div class="price col-6-sm center">
+				<label for="">
+					Filter by price range :
+				</label>
+				<input type="range" name="priceRange" max="1000" step="50" class="priceRange" value="0">
+				<div class="pink center">
+					R<span class="showPriceRange pink">0</span>.00
+				</div>
+			</div>
+			<span id="snackbar" class="center">New garment added</span>
+
+			<div class="message hidden">
+
+			</div>
+
+			<div class="add button mt1 center">
+				<a href="" class="center">Add garment</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="addGarment">
+
+		<div class="add garment hidden center">
+			<h2>Add garment</h2>
+			<img src="/images/{{img}}" alt="">
+
+			<!-- <form action="/garment/" method="post" class="addGarmentForm" > -->
+
+			<div class="field justify">
+				<label for="">Description : </label>
+				<input type="text" name="description" class="description">
+			</div>
+			<div class="field justify">
+				<label for="">Image : </label>
+				<input type="url" name="img" class="img">
+			</div>
+			<div class="field justify">
+				<label for="">Price : </label>
+				<input type="number" name="price" step="0.01" class="price">
+			</div>
+			<div class="field justify">
+				<label for="">Gender : </label>
+				<div>
+					<input type="text" name="gender" class="gender">
+				</div>
+			</div>
+			<div class="field justify">
+				<label for="">Season : </label>
+				<div>
+					<input type="text" name="season" class="season">
+				</div>
+			</div>
+			<div class="mt1 justify">
+				<input type="button" name="action" value="Add" class="addGarmentBtn btn">
+				<input type="button" name="action" value="Hide" class="hideAddGarmetBtn btn">
+			</div>
+			<!-- </form> -->
+		</div>
+
+	</div>
+
+	<div class="garmentsResultsSection hidden">
+		<h2>Garments</h2>
+
+		<div class="searchResults">
+
+		</div>
+	</div>
+	</div>
+	<script src="app.js"></script>
+	<script src="field-manager.js"></script>
+	<script src="add-garment.js"></script>
+	<script src="login.js"></script>
+</body>
+</html>
