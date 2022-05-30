@@ -1,3 +1,4 @@
+[![Build Status](https://app.travis-ci.com/Okuhle-96/missyTeeAlpine.svg?branch=master)](https://app.travis-ci.com/Okuhle-96/missyTeeAlpine)
 # Build an API using PosgreSQL and pg-promise
 
 This workshop builds on the [psql refresher workshop]() you should use SQL that you wrote in that workshop to create the API endpoints needed to make the Unit Tests pass. 
